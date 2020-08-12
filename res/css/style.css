@@ -88,6 +88,7 @@
     display: block;
     box-shadow: 2px 0 5px -2px rgba(0,0,0,0.5);
     min-width: 350px;
+    z-index:10;
 }
 
 .chats-list-item {
@@ -99,10 +100,8 @@
     align-items: center;
 }
 
-.chat {
-    max-height: 500px;
-    height: 500px;
-    width: 100%;
+.chats-list-item:hover {
+    background-color: #ddd;
 }
 
 .selected {
@@ -129,4 +128,105 @@
     color: white;
     font-weight: bold;
     font-size: 15px; 
+}
+
+/* chat */
+
+.chat-contents {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    background-color: #D0DBE1;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.chat {
+    width: 100%;
+    display: block;
+}
+
+.message-wrapper {
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.message {
+    width: 60%;
+    padding: 5px;
+    padding-bottom: 15px;
+    min-height: 30px;
+    position: relative;
+}
+
+.my-message {
+    align-self: end;
+    margin-left:auto;
+    margin-right:0;
+    background-color: #E7FFD1;
+    margin-right: 10px;
+}
+
+.others-message {
+    background-color: white;
+}
+
+.message-timestamp {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    white-space: nowrap;
+    margin-right: 2px;
+    font-size: 10px;
+    
+}
+
+.my-message > .message-timestamp {
+    color: #94A686;
+}
+
+.others-message > .message-timestamp {
+    color: #aaa;
+}
+
+.input-box {
+    display: flex;
+    height: 40px;
+    background-color: white;
+    align-items: center;
+}
+
+.input-box-icon {
+    height: 60%;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 12px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: #ddd;
+}
+
+#emoji-icon {
+    padding-left: 10px;
+}
+
+#attach-icon {
+    padding-left: 10px;
+}
+
+
+.block1 {
+    position: relative;
+}
+
+.block2 {
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
