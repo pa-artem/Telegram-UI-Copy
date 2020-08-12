@@ -1,9 +1,10 @@
+/* header */
+
 .header {
     background-color: #5682a3;
     color: white;
     display: flex;
     height: 60px;
-    width: 100%;
 }
 
 .chats-list-header {
@@ -11,7 +12,7 @@
     align-items: center;
     font-family: sans-serif;
     box-shadow: 2px 0 5px -2px rgba(0,0,0,0.5);
-    width: 400px;
+    min-width: 350px;
     height: 100%;
 }
 
@@ -71,4 +72,61 @@
 
 #options-icon {
     padding-right: 10px;
+}
+
+/* contents */
+
+.contents {
+    background-color: white;
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+    width: 100%;
+}
+
+.chats-list {
+    display: block;
+    box-shadow: 2px 0 5px -2px rgba(0,0,0,0.5);
+    min-width: 350px;
+}
+
+.chats-list-item {
+    height: 60px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.chat {
+    max-height: 500px;
+    height: 500px;
+    width: 100%;
+}
+
+.selected {
+    background-color: #eee;
+}
+
+.time-stamp {
+    color: #aaa;
+    font-size: 10pt;
+    align-self: start;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.unread-counter {
+    align-self: flex-end;
+    background-color: #64BB4D;
+    min-height: 20px;
+    min-width: 20px;
+    text-align: center;
+    margin:5px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 15px; 
 }
