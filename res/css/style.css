@@ -1,0 +1,74 @@
+.header {
+    background-color: #5682a3;
+    color: white;
+    display: flex;
+    height: 60px;
+    width: 100%;
+}
+
+.chats-list-header {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    box-shadow: 2px 0 5px -2px rgba(0,0,0,0.5);
+    width: 400px;
+    height: 100%;
+}
+
+.chat-header {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    max-height: 40%;
+}
+
+.user-pic {
+    max-height: 70%;
+    border-radius: 50%;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    max-height: 100%;
+    height: 100%;
+}
+
+.status-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100%;
+    height: 100%;
+}
+
+.name-text {
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.status-text {
+    font-size: 10pt;
+}
+
+#menu-icon {
+    padding-left: 10px;
+}
+
+#search-icon {
+    padding-right: 10px;
+}
+
+#left-arrow-icon {
+    padding-left: 10px;
+}
+
+#options-icon {
+    padding-right: 10px;
+}
