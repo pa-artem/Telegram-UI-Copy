@@ -26,13 +26,24 @@ img {
 
 /* thinner scrollbar for chrome/safari */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-}
+
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+::-webkit-scrollbar-track:window-inactive {
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .main-container {
@@ -226,6 +237,7 @@ img {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    flex: 1 0 30px;
 }
 
 .chat-data .unread-count {
@@ -235,7 +247,7 @@ img {
     background-color: #40a7e3;
     color: white;
     border-radius: 500px;
-    flex: 0 0 min-content;
+    flex: 0 1 fit-content;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -348,18 +360,23 @@ span.sender {
 
 .message-wrapper {
     width: 100%;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
     display: flex;
     align-items: end;
     overflow: visible;
+    margin-top: 4px;
+}
+
+.separator {
+    min-height: 8px;
+    border: none;
 }
 
 .message-pic-wrapper {
     max-height: 32px;
     max-width: 32px;
     min-width: 32px;
+    margin-left: 16px;
+    margin-right: 8px;
 }
 
 .message-pic {
@@ -367,9 +384,80 @@ span.sender {
 }
 
 .message-box {
-    min-height: 32px;
-    background-color: green;
-    width: 60%;
-    max-width: 400px;
-    min-width: 250px;
+    position: relative;
+    max-width: 500px;
+    min-width: 150px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px 4px 4px 4px;
+    color: black;
+}
+
+.message-box.last {
+    border-bottom-left-radius: 0px;
+}
+
+.arrow {
+    bottom: 0;
+    left: -8px;
+    position: absolute;
+    width:8px;
+    height:8px;
+    overflow:hidden;
+    transform: rotate(90deg);
+}
+
+.my .arrow {
+    box-shadow: 2px 0px 0 rgba(93, 196, 82, 0.4);
+}
+
+.other .arrow {
+    box-shadow: 2px 0px 0 rgba(168, 168, 168, 0.4);
+}
+
+.arrow:before {
+    content: '';
+    position: absolute;  
+    right: 0;
+    top: 0;
+    background: transparent;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.my .arrow:before {
+    box-shadow: 0 0 0 16px #effdde;
+}
+
+.other .arrow:before {
+    box-shadow: 0 0 0 16px white;
+}
+
+.message-box.my {
+    background-color: #effdde;
+    box-shadow: 0px 2px 0 rgba(93, 196, 82, 0.4);
+}
+
+.message-box.other {
+    background-color: white;
+    box-shadow: 0px 2px 0 rgba(168, 168, 168, 0.4);
+}
+
+.my .message-meta {
+    color: #5dc452;
+}
+
+.other .message-meta {
+    color: #a8a8a8;
+}
+
+.message-meta {
+    float: right;
+    margin: 4px -4px -4px 8px;  
+}
+
+.received-icon {
+    max-height: 10px;
 }

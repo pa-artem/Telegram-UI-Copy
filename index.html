@@ -141,115 +141,145 @@
                 </div>
 
                 <div class="chat">
+                    
+                    <!-- helper div, without it overflow-y does not work with flex column-reverse for some reason -->
+                    <div style="display: flex; flex-direction: column; overflow-y: auto; flex-grow: 1"><div class="chat-messages scroller">
 
-                    <!--<div style="display: flex; flex-direction: column; overflow-y: auto;">--><div class="chat-messages scroller">
+                        <div class="message-wrapper">
+                            <a href="#"><div class="message-pic-wrapper">
+                                <img class="message-pic" src="res/img/user1.jpg">
+                            </div></a>
+                            <div class="message-box other last">
+                                <div class="arrow"></div>
+                                Augue ut lectus arcu bibendum at varius vel pharetra vel.
+                                <div class="message-meta">1:20PM</div>
+                            </div>
+                        </div>
+
+                        <hr class="separator">
+
+                        <div class="message-wrapper">
+                            <div class="message-pic-wrapper"></div>
+                            <div class="message-box my">
+                                Lacinia quis vel eros donec ac odio tempor. Duis ultricies lacus sed turpis tincidunt id aliquet. Consectetur purus ut faucibus pulvinar elementum integer.
+                                <div class="message-meta">1:40PM <img class="received-icon" src="res/img/received-icon.png"></div>
+                            </div>
+                        </div>
+                        <div class="message-wrapper">
+                            <a href="#"><div class="message-pic-wrapper">
+                                <img class="message-pic" src="res/img/user.png">
+                            </div></a>
+                            <div class="message-box my last">
+                                <div class="arrow"></div>
+                                Quam lacus suspendisse faucibus interdum. Morbi tincidunt ornare massa eget egestas purus viverra. Euismod elementum nisi quis eleifend. Tortor dignissim convallis aenean et tortor at risus. Tempus egestas sed sed risus pretium quam vulputate. Nibh ipsum consequat nisl vel pretium.
+                                <div class="message-meta">2:15PM <img class="received-icon" src="res/img/received-icon.png"></div>
+                            </div>
+                        </div>
+
+                        <hr class="separator">
 
                          <div class="message-wrapper">
                             <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                            <div class="message-box other">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At erat pellentesque adipiscing commodo. 
+                                <div class="message-meta">2:18PM</div>
                             </div>
                         </div>
                         <div class="message-wrapper">
                             <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                            <div class="message-box other">
+                                Ultricies integer quis auctor elit sed. Vestibulum rhoncus est pellentesque elit. Nisi vitae suscipit tellus mauris a diam maecenas. Risus in hendrerit gravida rutrum quisque non tellus orci. In nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                <div class="message-meta">2:24PM</div>
                             </div>
                         </div>
                         <div class="message-wrapper">
-                            <div class="message-pic-wrapper">
+                            <a href="#"><div class="message-pic-wrapper">
                                 <img class="message-pic" src="res/img/user1.jpg">
-                            </div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                            </div></a>
+                            <div class="message-box other last">
+                                <div class="arrow"></div>
+                                Odio ut enim blandit volutpat maecenas volutpat blandit.
+                                <div class="message-meta">2:27PM</div>
                             </div>
                         </div>
 
+                        <hr class="separator">
+
                         <div class="message-wrapper">
-                            <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
-                            </div>
-                        </div>
-                        <div class="message-wrapper">
-                            <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
-                            </div>
-                        </div>
-                        <div class="message-wrapper">
-                            <div class="message-pic-wrapper">
-                                <img class="message-pic" src="res/img/user1.jpg">
-                            </div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                            <a href="#"><div class="message-pic-wrapper">
+                                <img class="message-pic" src="res/img/user.png">
+                            </div></a>
+                            <div class="message-box my last">
+                                <div class="arrow"></div>
+                                Augue ut lectus arcu bibendum at varius vel pharetra vel.
+                                <div class="message-meta">2:28PM <img class="received-icon" src="res/img/received-icon.png"></div>
                             </div>
                         </div>
 
-                        <div class="message-wrapper">
-                            <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
-                            </div>
-                        </div>
-                        <div class="message-wrapper">
-                            <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
-                            </div>
-                        </div>
-                        <div class="message-wrapper">
-                            <div class="message-pic-wrapper">
-                                <img class="message-pic" src="res/img/user1.jpg">
-                            </div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
-                            </div>
-                        </div>
+                        <hr class="separator">
 
                         <div class="message-wrapper">
                             <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                            <div class="message-box other">
+                                Lacinia quis vel eros donec ac odio tempor. Duis ultricies lacus sed turpis tincidunt id aliquet. Consectetur purus ut faucibus pulvinar elementum integer.
+                                <div class="message-meta">2:28PM</div>
                             </div>
                         </div>
                         <div class="message-wrapper">
-                            <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
-                            </div>
-                        </div>
-                        <div class="message-wrapper">
-                            <div class="message-pic-wrapper">
+                            <a href="#"><div class="message-pic-wrapper">
                                 <img class="message-pic" src="res/img/user1.jpg">
-                            </div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                            </div></a>
+                            <div class="message-box other last">
+                                <div class="arrow"></div>
+                                Quam lacus suspendisse faucibus interdum. Morbi tincidunt ornare massa eget egestas purus viverra. Euismod elementum nisi quis eleifend. Tortor dignissim convallis aenean et tortor at risus. Tempus egestas sed sed risus pretium quam vulputate. Nibh ipsum consequat nisl vel pretium.
+                                <div class="message-meta">2:30PM</div>
                             </div>
                         </div>
+
+                        <hr class="separator">
+
+                        <div class="message-wrapper">
+                            <a href="#"><div class="message-pic-wrapper">
+                                <img class="message-pic" src="res/img/user.png">
+                            </div></a>
+                            
+                            <div class="message-box my last">
+                                <div class="arrow"></div>
+                                Felis bibendum ut tristique et egestas quis ipsum suspendisse.
+                                <div class="message-meta">2:36 PM <img class="received-icon" src="res/img/received-icon.png"></div>
+                            </div>
+                        </div>
+
+                        <hr class="separator">
                         
                         <div class="message-wrapper">
                             <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                            <div class="message-box other">
+                                Felis donec et odio pellentesque. Suspendisse sed nisi lacus sed viverra tellus in hac. Sapien et ligula ullamcorper malesuada proin libero. Ridiculus mus mauris vitae ultricies leo integer malesuada.
+                                <div class="message-meta">2:38 PM</div>
                             </div>
                         </div>
                         <div class="message-wrapper">
                             <div class="message-pic-wrapper"></div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+                            <div class="message-box other">
+                                Enim sed faucibus turpis in eu.
+                                <div class="message-meta">2:39 PM</div>
                             </div>
                         </div>
-                        <div class="message-wrapper">
-                            <div class="message-pic-wrapper">
+                        <div class="message-wrapper other">
+                            <a href="#"><div class="message-pic-wrapper">
                                 <img class="message-pic" src="res/img/user1.jpg">
-                            </div>
-                            <div class="message-box">
-                                Blah blah blah blah blah blah.
+                            </div></a>
+                            <div class="message-box other last">
+                                <div class="arrow"></div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <div class="message-meta">2:39 PM</div>
                             </div>
                         </div>
 
-                    </div><!--</div>-->
+                        <hr class="separator">
+
+                    </div></div>
 
                     <div class="write-message-bar">
                         <div class="icon-wrapper" style="margin-left: 8px;">
