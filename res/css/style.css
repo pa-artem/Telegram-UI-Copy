@@ -364,6 +364,7 @@ span.sender {
     align-items: end;
     overflow: visible;
     margin-top: 4px;
+    align-items: flex-end;
 }
 
 .separator {
