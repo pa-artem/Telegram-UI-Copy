@@ -49,7 +49,7 @@ img {
 .main-container {
     color: black;
     background-color: white;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 9pt;
     height: 100vh;
     display: flex;
@@ -243,7 +243,7 @@ img {
 .chat-data .unread-count {
     min-width: 10px;
     padding: 2px 4px 2px 4px;
-    line-height: 105%;
+    line-height: 120%;
     background-color: #40a7e3;
     color: white;
     border-radius: 500px;
